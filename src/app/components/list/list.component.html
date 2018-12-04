@@ -1,0 +1,16 @@
+<app-navbar></app-navbar>
+<div class="row">
+  <div *mobxAutorun class="col-lg-12 col-sm-12 col-xl-12 col-md-12 col-xs-12">
+    <div class="row" *mobxAutorun>
+        <div   *ngFor="let item of _pearson.searchByName" class="col-lg-3 col-sm-3 col-xl-3 col-md-3 col-xs-12">
+          <div class="card mx-auto" style="width: 18rem;">
+            <img class="card-img-top" src="{{item.picture}}" alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title">{{item.name}}</h5>
+              <p class="card-text">{{item.greeting}}</p>
+            </div>
+          </div>
+        </div>  
+    </div>
+  </div>
+</div>
